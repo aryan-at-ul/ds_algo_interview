@@ -1,4 +1,13 @@
+"""
+Bogo Sort Algorithm Implementation
+This is a highly inefficient sorting algorithm that randomly shuffles the array until it is sorted.
+But, its not that bad !! 
+"""
+
+
 import random
+# from utils import record_states, animate_states
+# import matplotlib.pyplot as plt
 
 
 class BogoSort:
@@ -23,12 +32,14 @@ class BogoSort:
     
     # Fisher Yates shuffle algorithm: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle O(n) shuffling
     def shuffle(self):
-        for i in range(len(self.array)-2,-1,-1):  # corner case, i = -1
+        for i in range(len(self.array)-1,0,-1): 
             print("Shuffling: ", self.array)
-            j = random.randint(0, i+1)
+            j = random.randint(0, i)
             self.array[i],self.array[j] = self.array[j], self.array[i]
 
     
+
+
 if __name__ == '__main__':
     arr = [3, 2, 1, 5, 4]
     # arr = [5,3]
