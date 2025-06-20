@@ -1,4 +1,15 @@
+"""
+Bubble Sort Algorithm Implementation
+The methods sorts by comparing 2 elements at a time, start with the entire array
+go from 0th elemenet compare it to the next, if they are out of order swap them,
+then j goes to next element, jth value will have the largest value of the previous 2 elements
+This process is repeated until the larget element is at the end of the array.
 
+In next iteration, we do the same but do not care about the last element. 
+
+Intuition: Buoyancy (not beyonce!, but again to get to the top a bubble has to thank beyonce), the largest bubble will always float to the top first.
+
+"""
 
 
 
