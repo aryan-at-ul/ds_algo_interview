@@ -37,7 +37,6 @@ class BogoSort:
             j = random.randint(0, i)
             self.array[i],self.array[j] = self.array[j], self.array[i]
 
-    
 
 
 if __name__ == '__main__':
